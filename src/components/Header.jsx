@@ -5,7 +5,7 @@ import { FaDownload } from "react-icons/fa6";
 
 const Header = () => {
   return (
-    <nav className="text-[#07363C] py-3 px-8 w-[80%] mx-auto my-6 rounded-full flex items-center justify-between shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+    <nav className="text-[#07363C] py-3 px-8 w-[80%] mx-auto mt-6 rounded-full flex items-center justify-between shadow-[0_3px_10px_rgb(0,0,0,0.2)] fixed top-0 left-0 right-0 bg-white">
       <img src={Logo} alt="logo" className="w-[6%] h-[6%]" />
       <ul className="flex space-x-6 uppercase font-medium justify-center  items-center">
         <li>
