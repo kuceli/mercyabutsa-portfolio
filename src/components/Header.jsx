@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { Logo } from "../assets/Logo/logo-transparent.svg";
+import Logo from "../assets/Logo/PNG Transparent.png";
+import { FaDownload } from "react-icons/fa6";
 
 const Header = () => {
   return (
-    <nav className="text-[#07363C] py-4 px-8 border border-solid border-red-500 w-[80%] mx-auto my-6 rounded-full flex items-center justify-between">
-      {/* <img src={Logo} alt="logo" className="w-12 h-12 md:w-16 md:h-16" /> */}
-      <ul className="flex space-x-4 justify-center">
+    <nav className="text-[#07363C] py-3 px-8 w-[80%] mx-auto my-6 rounded-full flex items-center justify-between shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+      <img src={Logo} alt="logo" className="w-[6%] h-[6%]" />
+      <ul className="flex space-x-6 uppercase font-medium justify-center  items-center">
         <li>
           <Link to="/" className="hover:text-[#F48D3F]">
             Home
@@ -26,6 +27,15 @@ const Header = () => {
           <Link to="/contact" className="hover:text-[#F48D3F]">
             Contact
           </Link>
+        </li>
+        <li className="text-[#F48D3F] flex items-center space-x-2 border border-solid border-[#F48D3F] px-4 py-3 rounded-full">
+          <a
+            href="https://drive.google.com/file/d/1uVv4afeJ_GSY67pm_SSGUFGeznKfyx8d/view?usp=sharing"
+            target="_blank"
+          >
+            Download CV
+          </a>
+          <FaDownload size={20} />
         </li>
       </ul>
     </nav>
