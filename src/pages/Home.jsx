@@ -34,9 +34,9 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex w-[100%] h-screen">
-        <div className=" w-[50%] h-[100%] flex px-16">
-          <div className="flex justify-center items-center flex-col gap-y-6 w-[15%]">
+      <div className="flex w-[100%] h-screen  pl-20">
+        <div className=" w-[50%] h-[100%] flex">
+          <div className="flex justify-center flex-col gap-y-6 w-[10%]">
             <a
               target="_blank"
               href="https://www.linkedin.com/in/mercy-a-abutsa-8066b3215/"
@@ -56,7 +56,7 @@ const Home = () => {
               <GrInstagram style={style} />
             </a>
           </div>
-          <div className="flex flex-col justify-center w-[85%]">
+          <div className="flex flex-col justify-center w-[90%]">
             <p className="font-normal text-[20px] text-[#F48D3F]">
               {" "}
               Hello, I'm
