@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex w-[100%] h-screen  pl-20">
+      <div className="flex w-[100%] h-screen pl-20">
         <div className=" w-[50%] h-[100%] flex">
           <div className="flex justify-center flex-col gap-y-6 w-[10%]">
             <a
@@ -64,7 +64,6 @@ const Home = () => {
             <p className="font-semibold text-[50px] text-[#07363C]">
               Mercy Abutsa
             </p>
-            {/* <div className="w-24 h-1 bg-[#07363C]"></div> */}
             <p className="font-normal text-[20px] text-[#07363C]">
               A Passionate
               <span className="font-semibold text-[#F48D3F] ">
@@ -76,13 +75,12 @@ const Home = () => {
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry Lorem Ipsum has been the industry's standard.
             </p>
-
-            <div className="flex items-center justify-between text-[#07363C] mt-4 cursor-pointer space-x-2 border border-solid border-[#07363C] px-4 py-3 rounded-full w-[29%]">
-              <Link to="/contact" className="font-medium">
+            <Link to="/contact" className="font-medium">
+              <div className="flex items-center justify-between text-[#07363C] mt-4 cursor-pointer space-x-2 border border-solid border-[#07363C] px-4 py-3 rounded-full w-[24%]">
                 Contact Me
-              </Link>
-              <IoIosArrowForward size={20} />
-            </div>
+                <IoIosArrowForward size={20} />
+              </div>
+            </Link>
           </div>
         </div>
         <div className=" w-[50%] h-[100%] flex items-center pl-10 pt-12">
