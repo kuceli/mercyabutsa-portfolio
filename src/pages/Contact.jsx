@@ -59,7 +59,7 @@ const Contact = () => {
     transition: "all 0.7s",
   };
   return (
-    <div className="flex flex-col justify-between w-[70%] m-auto px-32 py-10 h-full mt-20">
+    <div className="flex flex-col justify-between w-[70%] m-auto px-32 py-12 h-full mt-20">
       <div className="flex items-center justify-center mb-7">
         <div className="h-[2px] w-[60%] xl:w-[30%] flex">
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
@@ -75,29 +75,29 @@ const Contact = () => {
       </div>
       <div className="flex flex-col md:flex-row gap-x-6 gap-y-6 justify-between md:h-[6rem] mt-8 md:mt-0 mb-5">
         <a
-          href="https://maps.app.goo.gl/GzLZVwzGXkrLNesRA"
+          href="https://maps.app.goo.gl/yfuzEv8GEwU3koFd6"
           target="_blank"
           style={cardStyle}
           className="lg:text-[90%] h-[6rem] w-[100%] md:w-[35%] xl:w-[30%] border border-solid border-[#E5E9ED]-500 hover:bg-[#07363C] hover:text-[#fff] text-[#7D7789] flex flex-col gap-2 justify-center items-center"
         >
           <MdLocationOn />
-          <p>Jos, Nigeria</p>
+          <p>USA/Nigeria</p>
         </a>
         <a
-          href="mailto:englamakuceli@gmail.com"
+          href="mailto:abutsamercy@gmail.com"
           style={cardStyle}
           className="lg:text-[90%] h-[6rem] w-[100%] md:w-[40%] xl:w-[30%] border border-solid border-[#E5E9ED]-500 text-[#7D7789] hover:bg-[#07363C] hover:text-[#fff] flex flex-col gap-2 items-center justify-center"
         >
           <HiMail />
-          <p>youremail@gmail.com</p>
+          <p>abutsamercy@gmail.com</p>
         </a>
         <a
-          href="tel:+16073277588"
+          href="tel:+2349068777214"
           style={cardStyle}
           className="lg:text-[90%] h-[6rem] w-[100%] mb-8 md:mb-0 md:w-[35%] xl:w-[30%] border border-solid border-[#E5E9ED]-500 text-[#7D7789] hover:bg-[#07363C] hover:text-[#fff] flex flex-col gap-2 items-center justify-center"
         >
           <BsPhoneFill />
-          <p>+234 xxx xxx xxxx</p>
+          <p>+234 906 877 7214</p>
         </a>
       </div>
       <div className="flex flex-col md:flex-row gap-x-5 w-[100%]">
