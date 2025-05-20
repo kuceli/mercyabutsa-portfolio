@@ -34,8 +34,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex w-[100%] h-screen pl-20">
-        <div className=" w-[50%] h-[100%] flex">
+      <div className="flex items-center w-[100%] h-[calc(100vh-24px)] pt-36 pb-12 pl-20 gap-x-12 ">
+        <div className=" w-[50%] h-full flex">
           <div className="flex justify-center flex-col gap-y-6 w-[10%]">
             <a
               target="_blank"
@@ -83,8 +83,8 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className=" w-[50%] h-[100%] flex items-center pl-10 pt-12">
-          <div className="grid grid-cols-5 grid-rows-5 gap-3 w-[100%] h-[70%]">
+        <div className=" w-[50%] h-full flex items-center">
+          <div className="grid grid-cols-5 grid-rows-5 gap-3 w-[100%] h-full">
             <div className="col-start-4 row-start-1 ">
               <img
                 src={Img2}
