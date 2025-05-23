@@ -1,6 +1,5 @@
 import React from "react";
 import Img1 from "../assets/about-pictures/mercy-picture.jpeg";
-import AboutLogoCarousel from "../components/AboutLogoCarousel";
 const About = () => {
   return (
     <div className="mt-32 w-full h-full px-36 text-[#07363C]">
@@ -17,7 +16,7 @@ const About = () => {
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
         </div>
       </div>
-      <div className="h-[655px] w-[100%] flex gap-x-12">
+      <div className="h-[655px] w-[100%] flex gap-x-12 mb-10">
         <div className="h-[100%] w-[55%] py-6 text-base/7 flex flex-col gap-y-4 justify-center">
           <p>
             {" "}
@@ -54,9 +53,6 @@ const About = () => {
             className="h-[100%] w-[100%] object-cover"
           />
         </div>
-      </div>
-      <div className="py-4">
-        <AboutLogoCarousel />
       </div>
       <div className="h-[655px] w-[100%] flex gap-x-12 mb-5">
         <div className="h-[100%] w-[45%]">
