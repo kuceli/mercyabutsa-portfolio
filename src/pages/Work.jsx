@@ -1,7 +1,50 @@
 import React from "react";
+import WorkAccordion from "../components/WorkAccordion";
 
 const Work = () => {
-  return <div>Work</div>;
+  return (
+    <div className="mt-32 w-full h-full text-[#07363C] px-36 ">
+      <div className="flex items-center justify-center mb-7 ">
+        <div className="h-[2px] w-[60%] xl:w-[30%] flex">
+          <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
+          <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
+        </div>
+        <p className="w-[40%] xl:w-[40%] mx-4 font-semibold tracking-[0.35rem] text-[25px] text-center">
+          WORK HIGHLIGHTS
+        </p>
+        <div className="h-[2px] w-[60%] xl:w-[30%] flex">
+          <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
+          <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
+        </div>
+      </div>
+      <div className="h-[500px] w-[100%] flex justify-between  ">
+        <div className="h-[100%] w-[30%] ">
+          <div className="h-[100%] w-[100%] bg-yellow-500 relative">
+            <div className="absolute top-[15%] left-[20%] w-[110%] h-[70%] bg-black opacity-50"></div>
+          </div>
+        </div>
+        <div className="h-[100%] w-[55%] flex flex-col gap-y-4 ">
+          <div className="text-xl w-[100%] uppercase tracking-[0.2rem]">
+            Name of Organization
+          </div>
+          <div className=" h-[30%] text-sm">
+            Something short about the organization. this is a dummy text. On her
+            way she met a copy. The copy warned the Little Blind Text, that
+            where it came from it would have been rewritten a thousand times and
+            everything that was left from its origin would be the word "and" and
+            the Little Blind Text should turn around and return to its own, safe
+            country. everything that was left from its origin would be the word
+            "and" and the Little Blind Text should turn around and return to its
+            own, safe country.the Little Blind Text should turn around and
+            return to its own, safe country.
+          </div>
+          <div className=" h-[40%]">
+            <WorkAccordion />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Work;

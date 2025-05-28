@@ -1,9 +1,10 @@
 import React from "react";
 import Img1 from "../assets/about-pictures/mercy-picture.jpeg";
+
 const About = () => {
   return (
-    <div className="mt-32 w-full h-full px-36 text-[#07363C]">
-      <div className="flex items-center justify-center mb-7">
+    <div className="mt-32 w-full h-full text-[#07363C]">
+      <div className="flex items-center justify-center mb-7 px-36 ">
         <div className="h-[2px] w-[60%] xl:w-[35%] flex">
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
           <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
@@ -16,7 +17,7 @@ const About = () => {
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
         </div>
       </div>
-      <div className="h-[655px] w-[100%] flex gap-x-12 mb-10">
+      <div className="h-[655px] w-[100%] flex gap-x-12  px-36 mb-12 ">
         <div className="h-[100%] w-[55%] py-6 text-base/7 flex flex-col gap-y-4 justify-center">
           <p>
             {" "}
@@ -54,7 +55,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="h-[655px] w-[100%] flex gap-x-12 mb-5">
+      <div className="h-[655px] w-[100%] flex gap-x-12 mb-5  px-36 ">
         <div className="h-[100%] w-[45%]">
           <img
             src={Img1}
