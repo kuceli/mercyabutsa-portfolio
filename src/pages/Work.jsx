@@ -1,5 +1,6 @@
 import React from "react";
 import WorkAccordion from "../components/WorkAccordion";
+import FeaturedCarousel from "../components/FeaturedCarousel";
 
 const Work = () => {
   return (
@@ -17,7 +18,7 @@ const Work = () => {
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
         </div>
       </div>
-      <div className="h-[500px] w-[100%] flex justify-between  ">
+      <div className="h-[511px] w-[100%] flex justify-between  ">
         <div className="h-[100%] w-[30%] ">
           <div className="h-[100%] w-[100%] bg-yellow-500 relative">
             <div className="absolute top-[15%] left-[20%] w-[110%] h-[70%] bg-black opacity-50"></div>
@@ -43,6 +44,8 @@ const Work = () => {
           </div>
         </div>
       </div>
+
+      <FeaturedCarousel />
     </div>
   );
 };
