@@ -15,15 +15,19 @@ function Layout() {
 
   return (
     <>
-      {isValidPath && <Header />}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/*" element={<NotFound />} />{" "}
-      </Routes>
-      {isValidPath && <Footer />}
+      <div className="flex flex-col flex-grow">
+        {isValidPath && <Header />}
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+        </div>
+        {isValidPath && <Footer />}
+      </div>
     </>
   );
 }

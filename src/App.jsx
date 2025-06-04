@@ -4,9 +4,11 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-    <Router>
-      <Layout />
-    </Router>
+    <div className="min-h-screen flex flex-col">
+      <Router>
+        <Layout />
+      </Router>
+    </div>
   );
 }
 

@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex items-center w-[100%] h-[calc(100vh-24px)] pt-36 pb-12 pl-20 gap-x-12 ">
+      <div className="flex items-center w-[100%] h-[calc(100vh-45px)] pt-36 pb-12 pl-20 gap-x-12 ">
         <div className=" w-[50%] h-full flex">
           <div className="flex justify-center flex-col gap-y-6 w-[10%]">
             <a

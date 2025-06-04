@@ -143,7 +143,7 @@ const FeaturedCarousel = () => {
         <Slider {...settings}>
           {featuredItems.map((item, index) => (
             <div key={index} className="px-2 mb-4">
-              <div className="bg-white rounded-lg overflow-hidden h-full flex flex-col shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+              <div className="bg-white overflow-hidden h-full flex flex-col shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                 <img
                   src={item.image}
                   alt={item.title}

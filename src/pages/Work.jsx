@@ -1,6 +1,9 @@
 import React from "react";
 import WorkAccordion from "../components/WorkAccordion";
 import FeaturedCarousel from "../components/FeaturedCarousel";
+import Img1 from "../assets/home-pictures/1.jpg";
+import Img2 from "../assets/home-pictures/2.jpg";
+import WorkExpertise from "../components/WorkExpertise";
 
 const Work = () => {
   return (
@@ -46,6 +49,7 @@ const Work = () => {
       </div>
 
       <FeaturedCarousel />
+      <WorkExpertise />
     </div>
   );
 };
