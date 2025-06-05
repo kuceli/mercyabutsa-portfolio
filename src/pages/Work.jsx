@@ -4,6 +4,7 @@ import FeaturedCarousel from "../components/FeaturedCarousel";
 import Img1 from "../assets/home-pictures/1.jpg";
 import Img2 from "../assets/home-pictures/2.jpg";
 import WorkExpertise from "../components/WorkExpertise";
+import { motion } from "framer-motion";
 
 const Work = () => {
   return (
@@ -21,13 +22,24 @@ const Work = () => {
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
         </div>
       </div>
+
       <div className="h-[511px] w-[100%] flex justify-between  ">
-        <div className="h-[100%] w-[30%] ">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className=" h-[100%] w-[30%] "
+        >
           <div className="h-[100%] w-[100%] bg-yellow-500 relative">
             <div className="absolute top-[15%] left-[20%] w-[110%] h-[70%] bg-black opacity-50"></div>
           </div>
-        </div>
-        <div className="h-[100%] w-[55%] flex flex-col gap-y-4 ">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="h-[100%] w-[55%] flex flex-col gap-y-4 "
+        >
           <div className="text-xl w-[100%] uppercase tracking-[0.2rem]">
             Name of Organization
           </div>
@@ -45,11 +57,26 @@ const Work = () => {
           <div className=" h-[40%]">
             <WorkAccordion />
           </div>
-        </div>
+        </motion.div>
       </div>
-
-      <FeaturedCarousel />
-      <WorkExpertise />
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }}
+        className=""
+      >
+        <FeaturedCarousel />
+      </motion.div>
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }}
+        className=""
+      >
+        <WorkExpertise />
+      </motion.div>
     </div>
   );
 };

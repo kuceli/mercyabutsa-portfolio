@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { FaFacebookF, FaLinkedinIn, FaMediumM } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { IoIosArrowForward } from "react-icons/io";
+import { motion } from "framer-motion";
 import Img1 from "../assets/home-pictures/1.jpg";
 import Img2 from "../assets/home-pictures/2.jpg";
 import Img3 from "../assets/home-pictures/3.jpg";
@@ -35,27 +36,40 @@ const Home = () => {
   return (
     <>
       <div className="flex items-center w-[100%] h-[calc(100vh-45px)] pt-36 pb-12 pl-20 gap-x-12 ">
-        <div className=" w-[50%] h-full flex">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="w-[50%] h-full flex"
+        >
           <div className="flex justify-center flex-col gap-y-6 w-[10%]">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/mercy-a-abutsa-8066b3215/"
-            >
-              <FaLinkedinIn style={style} />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/mercykaren.abutsa/"
-            >
-              <FaFacebookF style={style} />
-            </a>
-            <a target="_blank" href="https://medium.com/@abutsamercy">
-              <FaMediumM style={style} />
-            </a>
-            <a target="_blank" href="https://www.instagram.com/msa_karen/">
-              <GrInstagram style={style} />
-            </a>
+            {[
+              {
+                icon: <FaLinkedinIn />,
+                url: "https://www.linkedin.com/in/mercy-a-abutsa-8066b3215/",
+              },
+              {
+                icon: <FaFacebookF />,
+                url: "https://www.facebook.com/mercykaren.abutsa/",
+              },
+              { icon: <FaMediumM />, url: "https://medium.com/@abutsamercy" },
+              {
+                icon: <GrInstagram />,
+                url: "https://www.instagram.com/msa_karen/",
+              },
+            ].map(({ icon, url }, index) => (
+              <a
+                key={index}
+                target="_blank"
+                href={url}
+                rel="noopener noreferrer"
+                className="text-[#07363C] hover:text-[#F48D3F] transition-all duration-300 transform hover:scale-110"
+              >
+                {icon}
+              </a>
+            ))}
           </div>
+
           <div className="flex flex-col justify-center w-[90%]">
             <p className="font-normal text-[20px] text-[#F48D3F]">
               {" "}
@@ -76,14 +90,30 @@ const Home = () => {
               industry Lorem Ipsum has been the industry's standard.
             </p>
             <Link to="/contact" className="font-medium">
-              <div className="flex items-center justify-between text-[#07363C] mt-4 cursor-pointer space-x-2 border border-solid border-[#07363C] px-4 py-3 rounded-full w-[24%]">
-                Contact Me
-                <IoIosArrowForward size={20} />
+              <div className="cursor-pointer relative group mt-2 md:mt-4 w-40 h-[50px] rounded-full overflow-hidden border border-[#07363C] hover:border-[#07363C] text-[#07363C] transition-all duration-300 hover:text-white hover:shadow-[0_8px_20px_rgba(7,54,60,0.15)]">
+                <a
+                  href="https://drive.google.com/file/d/1uVv4afeJ_GSY67pm_SSGUFGeznKfyx8d/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-full h-full relative z-10 space-x-2"
+                >
+                  <span className="relative z-10">Contact Me</span>
+                  <IoIosArrowForward
+                    size={18}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </a>
+                <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#07363C] transition-all duration-500 group-hover:w-full"></span>
               </div>
             </Link>
           </div>
-        </div>
-        <div className=" w-[50%] h-full flex items-center">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="w-[50%] h-full flex items-center"
+        >
           <div className="grid grid-cols-5 grid-rows-5 gap-3 w-[100%] h-full">
             <div className="col-start-4 row-start-1 ">
               <img
@@ -135,7 +165,7 @@ const Home = () => {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

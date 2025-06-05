@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Logo from "../assets/Logo/PNG Transparent.png";
 import { FaDownload } from "react-icons/fa6";
 import { FaTimes, FaBars } from "react-icons/fa";
@@ -22,49 +22,71 @@ const Header = () => {
         }`}
       >
         <li className="py-2 md:py-0">
-          <Link
+          <NavLink
             to="/"
-            className="hover:text-[#F48D3F]"
+            className={({ isActive }) =>
+              isActive
+                ? "text-[#F48D3F]"
+                : "hover:text-[#F48D3F] transition-colors"
+            }
             onClick={() => setMenuOpen(false)}
           >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li className="py-2 md:py-0">
-          <Link
+          <NavLink
             to="/about"
-            className="hover:text-[#F48D3F]"
+            className={({ isActive }) =>
+              isActive
+                ? "text-[#F48D3F]"
+                : "hover:text-[#F48D3F] transition-colors"
+            }
             onClick={() => setMenuOpen(false)}
           >
             About
-          </Link>
+          </NavLink>
         </li>
         <li className="py-2 md:py-0">
-          <Link
+          <NavLink
             to="/work"
-            className="hover:text-[#F48D3F]"
+            className={({ isActive }) =>
+              isActive
+                ? "text-[#F48D3F]"
+                : "hover:text-[#F48D3F] transition-colors"
+            }
             onClick={() => setMenuOpen(false)}
           >
             Work
-          </Link>
+          </NavLink>
         </li>
         <li className="py-2 md:py-0">
-          <Link
+          <NavLink
             to="/contact"
-            className="hover:text-[#F48D3F]"
+            className={({ isActive }) =>
+              isActive
+                ? "text-[#F48D3F]"
+                : "hover:text-[#F48D3F] transition-colors"
+            }
             onClick={() => setMenuOpen(false)}
           >
             Contact
-          </Link>
+          </NavLink>
         </li>
-        <li className="flex text-[#F48D3F] items-center space-x-2 border border-solid border-[#F48D3F] px-4 mt-2 md:mt-0 py-3 rounded-full">
+        <li className="relative group mt-2 md:mt-0 w-40 h-[50px] rounded-full overflow-hidden border border-[#F48D3F] text-[#F48D3F] transition-all duration-300 hover:text-white hover:shadow-[0_8px_20px_rgba(244,141,63,0.15)]">
           <a
             href="https://drive.google.com/file/d/1uVv4afeJ_GSY67pm_SSGUFGeznKfyx8d/view?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-full h-full relative z-10 space-x-2"
           >
-            Download CV
+            <span className="relative z-10">Download CV</span>
+            <FaDownload
+              size={18}
+              className="transition-transform duration-300 group-hover:rotate-[-15deg] group-hover:scale-110"
+            />
           </a>
-          <FaDownload size={20} />
+          <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#F48D3F] transition-all duration-500 group-hover:w-full"></span>
         </li>
       </ul>
     </nav>
