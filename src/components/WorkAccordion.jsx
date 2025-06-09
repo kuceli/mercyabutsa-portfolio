@@ -55,7 +55,7 @@ const WorkAccordion = () => {
 
   const items = [
     {
-      title: "About",
+      title: "Activities",
       content:
         "This section introduces the organization, its founding purpose, and its broader context. Founded by Mercy Abutsa, the organization is committed to advancing equitable climate and development solutions through community-led engagement, research, and advocacy. It operates at the intersection of gender, environment, and policy, with a strong focus on amplifying local voices in global dialogues.",
     },

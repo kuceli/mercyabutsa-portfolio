@@ -44,15 +44,16 @@ const Work = () => {
             Name of Organization
           </div>
           <div className=" h-[30%] text-sm">
-            Something short about the organization. this is a dummy text. On her
-            way she met a copy. The copy warned the Little Blind Text, that
-            where it came from it would have been rewritten a thousand times and
-            everything that was left from its origin would be the word "and" and
-            the Little Blind Text should turn around and return to its own, safe
-            country. everything that was left from its origin would be the word
-            "and" and the Little Blind Text should turn around and return to its
-            own, safe country.the Little Blind Text should turn around and
-            return to its own, safe country.
+            This could serve as a concise "about" section instead of creating
+            another about section. Something short about the organization. this
+            is a dummy text. On her way she met a copy. The copy warned the
+            Little Blind Text, that where it came from it would have been
+            rewritten a thousand times and everything that was left from its
+            origin would be the word "and" and the Little Blind Text should turn
+            around and return to its own, safe country. everything that was left
+            from its origin would be the word "and" and the Little Blind Text
+            should turn around and return to its own, safe country.the Little
+            Blind Text should turn around and return to its own, safe country.
           </div>
           <div className=" h-[40%]">
             <WorkAccordion />
@@ -62,7 +63,7 @@ const Work = () => {
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.3 }}
         className=""
       >
@@ -71,7 +72,7 @@ const Work = () => {
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.3 }}
         className=""
       >

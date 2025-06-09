@@ -67,48 +67,10 @@ const About = () => {
           />
         </motion.div>
       </div>
-      {/* <div className="h-[655px] w-[100%] flex gap-x-12 mb-5  px-36 ">
-        <div className="h-[100%] w-[45%]">
-          <img
-            src={Img1}
-            alt="Mercy's Picture"
-            className="h-[100%] w-[100%] object-cover"
-          />
-        </div>
-        <div className="h-[100%] w-[55%] py-6 text-base/7 flex flex-col gap-y-4 justify-center">
-          <p>
-            {" "}
-            Mercy Abutsa is a global development specialist passionate about
-            building climate-resilient communities and driving gender-responsive
-            solutions at the intersection of policy, agriculture, and
-            environmental justice. With over five years of experience spanning
-            international development, climate diplomacy, and grassroots
-            engagement, Mercy brings a dynamic blend of field expertise,
-            strategic thinking, and advocacy to her work.
-          </p>
-          <p>
-            Her professional journey includes impactful roles with
-            world-renowned organizations such as the Ban Ki-moon Centre for
-            Global Citizens, the United Nations Framework Convention on Climate
-            Change (UNFCCC), The Nature Conservancy (TNC), and the Women
-            Environmental Programme (WEP). Across these roles, she has led and
-            supported high-level programs focused on equitable climate action,
-            sustainable agriculture, and inclusive governance—shaping policies
-            and mobilizing resources to uplift vulnerable communities,
-            especially women and youth.
-          </p>
-          <p>
-            Her professional journey includes impactful roles with
-            world-renowned organizations such as the Ban Ki-moon Centre for
-            Global Citizens, the United Nations Framework Convention on Climate
-            Change (UNFCCC), The Nature Conservancy (TNC), and the Women
-          </p>
-        </div>
-      </div> */}
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.3 }}
         className="h-[655px] w-[100%] flex gap-x-12 mb-5 px-36"
       >
