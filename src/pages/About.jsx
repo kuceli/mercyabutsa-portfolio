@@ -5,26 +5,26 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="mt-32 w-full h-full text-[#07363C]">
-      <div className="flex items-center justify-center mb-7 px-36 ">
-        <div className="h-[2px] w-[60%] xl:w-[35%] flex">
+      <div className="flex items-center justify-center mb-7 px-20 xl:px-36 ">
+        <div className="h-[2px] w-[30%] xl:w-[35%] flex">
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
           <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
         </div>
         <p className="w-[40%] xl:w-[30%] mx-4 font-semibold tracking-[0.35rem] text-[25px] text-center">
           ABOUT MERCY
         </p>
-        <div className="h-[2px] w-[60%] xl:w-[35%] flex">
+        <div className="h-[2px] w-[30%] xl:w-[35%] flex">
           <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
         </div>
       </div>
 
-      <div className="h-[655px] w-[100%] flex gap-x-12  px-36 mb-12 ">
+      <div className="h-[30%] w-[100%] flex gap-x-8 xl:gap-x-12 px-20 xl:px-36 mb-12 border border-solid border-red-500 ">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="h-[100%] w-[55%] py-6 text-base/7 flex flex-col gap-y-4 justify-center"
+          className="[100%] w-[55%] py-6 text-[15px] xl:text-base/7 flex flex-col gap-y-4 justify-center border border-solid border-red-500"
         >
           <p>
             {" "}
@@ -58,7 +58,7 @@ const About = () => {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="h-[100%] w-[45%]"
+          className="h-[100%] w-[45%] border border-solid border-red-500"
         >
           <img
             src={Img1}

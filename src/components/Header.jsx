@@ -8,8 +8,8 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="text-[#07363C] shadow-[0_3px_10px_rgb(0,0,0,0.2)] text-sm md:text-base font-medium py-3 px-8 md:px-20 w-full mx-auto flex items-center justify-between fixed top-0 left-0 right-0 bg-white z-50">
-      <Link to="/" className="w-[10%] md:w-[6%] h-auto">
+    <nav className="text-[#07363C] shadow-[0_3px_10px_rgb(0,0,0,0.2)] text-sm md:text-base font-medium py-3 px-8 md:px-12 lg:px-20 w-full mx-auto flex items-center justify-between fixed top-0 left-0 right-0 bg-white z-50">
+      <Link to="/" className="w-[60px] h-auto">
         <img src={Logo} alt="logo" />
       </Link>
       <div className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
