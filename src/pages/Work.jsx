@@ -1,80 +1,77 @@
 import React from "react";
 import WorkAccordion from "../components/WorkAccordion";
 import FeaturedCarousel from "../components/FeaturedCarousel";
-import Img1 from "../assets/home-pictures/1.jpg";
-import Img2 from "../assets/home-pictures/2.jpg";
 import WorkExpertise from "../components/WorkExpertise";
 import { motion } from "framer-motion";
 
 const Work = () => {
   return (
-    <div className="mt-32 w-full h-full text-[#07363C] px-36 ">
-      <div className="flex items-center justify-center mb-7 ">
-        <div className="h-[2px] w-[60%] xl:w-[30%] flex">
-          <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
-          <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
+    <div className="mt-32 w-full text-[#07363C] px-6 sm:px-10 md:px-20 lg:px-28 xl:px-36">
+      {/* Heading */}
+      <div className="flex flex-col md:flex-row items-center justify-center mb-10 text-center gap-4">
+        <div className="flex h-[2px] w-full md:w-[30%]">
+          <div className="w-1/2 h-full bg-[#07363C]"></div>
+          <div className="w-1/2 h-full bg-[#F48D3F]"></div>
         </div>
-        <p className="w-[40%] xl:w-[40%] mx-4 font-semibold tracking-[0.35rem] text-[25px] text-center">
+        <p className="text-xl md:text-2xl tracking-[0.35rem] font-semibold">
           WORK HIGHLIGHTS
         </p>
-        <div className="h-[2px] w-[60%] xl:w-[30%] flex">
-          <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
-          <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
+        <div className="flex h-[2px] w-full md:w-[30%]">
+          <div className="w-1/2 h-full bg-[#F48D3F]"></div>
+          <div className="w-1/2 h-full bg-[#07363C]"></div>
         </div>
       </div>
 
-      <div className="h-[511px] w-[100%] flex justify-between  ">
+      {/* Highlight Section */}
+      <div className="w-full flex flex-col lg:flex-row gap-8 mb-0 lg:h-[525px]">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className=" h-[100%] w-[30%] "
+          className="w-full lg:w-[40%] h-64 sm:h-80 lg:h-full"
         >
-          <div className="h-[100%] w-[100%] bg-yellow-500 relative">
-            <div className="absolute top-[15%] left-[20%] w-[110%] h-[70%] bg-black opacity-50"></div>
-          </div>
+          <div className="w-full h-full bg-yellow-500 overflow-hidden"></div>
         </motion.div>
+
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="h-[100%] w-[55%] flex flex-col gap-y-4 "
+          className="w-full h-full lg:w-[60%] flex flex-col gap-4"
         >
-          <div className="text-xl w-[100%] uppercase tracking-[0.2rem]">
+          <div className="text-lg sm:text-xl uppercase tracking-[0.2rem]">
             Name of Organization
           </div>
-          <div className=" h-[30%] text-sm">
+          <div className="text-sm leading-relaxed">
             This could serve as a concise "about" section instead of creating
-            another about section. Something short about the organization. this
+            another about section. Something short about the organization. This
             is a dummy text. On her way she met a copy. The copy warned the
             Little Blind Text, that where it came from it would have been
             rewritten a thousand times and everything that was left from its
             origin would be the word "and" and the Little Blind Text should turn
-            around and return to its own, safe country. everything that was left
-            from its origin would be the word "and" and the Little Blind Text
-            should turn around and return to its own, safe country.the Little
-            Blind Text should turn around and return to its own, safe country.
+            around and return to its own, safe country.
           </div>
-          <div className=" h-[40%]">
+          <div>
             <WorkAccordion />
           </div>
         </motion.div>
       </div>
+
+      {/* Carousel */}
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.3 }}
-        className=""
+        viewport={{ once: true, amount: 0.3 }}
       >
         <FeaturedCarousel />
       </motion.div>
+      {/* Expertise */}
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.3 }}
-        className=""
+        viewport={{ once: true, amount: 0.3 }}
       >
         <WorkExpertise />
       </motion.div>

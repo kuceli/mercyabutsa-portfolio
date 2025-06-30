@@ -30,11 +30,11 @@ const expertise = [
 export default function WorkExpertise() {
   return (
     <div className="relative py-12">
-      <div className="flex items-center mb-7 ">
-        <p className="w-[40%] xl:w-[40%] mr-4 font-semibold tracking-[0.1rem] text-2xl md:text-2xl uppercase">
+      <div className="flex flex-col md:flex-row items-center justify-center mb-7 text-center md:text-left gap-4 ">
+        <p className="w-full md:w-[50%] xl:w-[40%] mr-4 font-semibold tracking-[0.1rem] text-xl md:text-2xl uppercase">
           Expertise & Specialization
         </p>
-        <div className="h-[2px] w-[60%] xl:w-[60%] flex">
+        <div className="h-[2px] w-full md:w-[50%] xl:w-[60%] flex">
           <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
         </div>
@@ -45,8 +45,8 @@ export default function WorkExpertise() {
             key={idx}
             className={`group bg-white px-6 pt-10 pb-6 rounded-lg text-center hover:shadow-md shadow-[0_8px_20px_rgba(7,54,60,0.15)]
  transition duration-300 cursor-default ${
-   idx === 1 || idx === 3 ? "mt-20" : ""
- } ${idx === 0 || idx === 2 ? "mb-20" : ""}`}
+   idx === 1 || idx === 3 ? " mt-0 md:mt-20" : ""
+ } ${idx === 0 || idx === 2 ? "mt-0 md:mb-20" : ""}`}
           >
             <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 text-3xl group-hover:bg-orange-100 transition duration-300">
               {item.icon}

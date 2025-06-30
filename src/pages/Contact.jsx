@@ -65,7 +65,7 @@ const Contact = () => {
           <div className="w-1/2 h-full bg-[#07363C]"></div>
           <div className="w-1/2 h-full bg-[#F48D3F]"></div>
         </div>
-        <p className="text-xl sm:text-2xl tracking-[0.35rem] font-semibold">
+        <p className="text-xl md:text-2xl tracking-[0.35rem] font-semibold">
           GET IN TOUCH
         </p>
         <div className="flex h-[2px] w-full md:w-[30%]">

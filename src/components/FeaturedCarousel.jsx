@@ -129,12 +129,12 @@ const FeaturedCarousel = () => {
   };
 
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-0 pt-12 ">
-      <div className="flex items-center mb-7 ">
-        <p className="w-[40%] xl:w-[15%] mr-4 font-semibold tracking-[0.1rem] text-2xl md:text-2xl">
+    <section className="w-full px-0 pt-12 ">
+      <div className="flex flex-col md:flex-row items-center justify-center mb-7 text-center md:text-left gap-4 ">
+        <p className="w-[40%] md:w-[20%] xl:w-[15%] mr-4 font-semibold tracking-[0.1rem] text-xl md:text-2xl">
           FEATURED
         </p>
-        <div className="h-[2px] w-[60%] xl:w-[85%] flex">
+        <div className="h-[2px] w-full md:w-[80%] xl:w-[85%] flex">
           <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
           <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
         </div>
