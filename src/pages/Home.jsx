@@ -51,7 +51,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center w-full min-h-screen pt-28 pb-12 px-4 md:px-12 lg:px-20 sm:gap-y-12 lg:gap-x-12">
+    <div className="flex flex-col lg:flex-row items-center w-full min-h-screen pt-28 pb-12 px-8 md:px-12 lg:px-20 sm:gap-y-12 lg:gap-x-12">
       {/* Left */}
       <motion.div
         initial={{ x: -100, opacity: 0 }}
@@ -149,7 +149,7 @@ const Home = () => {
 
         {/* Grid for large screens */}
         <div className="hidden lg:grid grid-cols-5 grid-rows-5 gap-3 w-full h-full max-h-[600px]">
-          <div className="col-start-4 row-start-1">
+          <div className="col-span-2 row-span-2 col-start-2">
             <img
               src={Img2}
               alt=""
@@ -157,7 +157,7 @@ const Home = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="col-span-2 row-span-2 col-start-4 row-start-2">
+          <div className="col-start-4">
             <img
               src={Img5}
               alt=""
@@ -173,7 +173,7 @@ const Home = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="col-span-2 row-span-2 col-start-3 row-start-4">
+          <div className="col-span-2 row-span-2 col-start-1 row-start-3">
             <img
               src={Img7}
               alt=""
@@ -181,7 +181,7 @@ const Home = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="col-span-2 row-span-2 col-start-2 row-start-1">
+          <div className="col-start-2 row-start-5">
             <img
               src={Img1}
               alt=""
@@ -189,7 +189,7 @@ const Home = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="col-span-2 row-span-2 col-start-1 row-start-3">
+          <div className="col-span-2 row-span-2 col-start-3 row-start-4">
             <img
               src={Img3}
               alt=""
@@ -197,7 +197,7 @@ const Home = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="col-start-2 row-start-5">
+          <div className="col-span-2 row-span-2 col-start-4 row-start-2">
             <img
               src={Img6}
               alt=""

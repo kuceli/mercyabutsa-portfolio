@@ -4,110 +4,119 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="mt-32 w-full h-full text-[#07363C]">
-      <div className="flex items-center justify-center mb-7 px-20 xl:px-36 ">
-        <div className="h-[2px] w-[30%] xl:w-[35%] flex">
-          <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
-          <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
+    <div className="mt-32 w-full px-8 md:px-12 lg:px-20 xl:px-36 text-[#07363C] mb-10">
+      {/* Heading */}
+      <div className="flex flex-col md:flex-row items-center justify-center mb-10 text-center gap-4">
+        <div className="flex h-[2px] w-full md:w-[30%]">
+          <div className="w-1/2 h-full bg-[#07363C]"></div>
+          <div className="w-1/2 h-full bg-[#F48D3F]"></div>
         </div>
-        <p className="w-[40%] xl:w-[30%] mx-4 font-semibold tracking-[0.35rem] text-[25px] text-center">
+        <p className="text-xl sm:text-2xl tracking-[0.35rem] font-semibold">
           ABOUT MERCY
         </p>
-        <div className="h-[2px] w-[30%] xl:w-[35%] flex">
-          <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
-          <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
+        <div className="flex h-[2px] w-full md:w-[30%]">
+          <div className="w-1/2 h-full bg-[#F48D3F]"></div>
+          <div className="w-1/2 h-full bg-[#07363C]"></div>
         </div>
       </div>
 
-      <div className="h-[30%] w-[100%] flex gap-x-8 xl:gap-x-12 px-20 xl:px-36 mb-12 border border-solid border-red-500 ">
+      {/* First Section */}
+      <div className="flex flex-col lg:flex-row gap-10 mb-12">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="[100%] w-[55%] py-6 text-[15px] xl:text-base/7 flex flex-col gap-y-4 justify-center border border-solid border-red-500"
+          className="w-full lg:w-1/2 text-sm sm:text-base flex flex-col gap-4 justify-center text-justify "
         >
           <p>
-            {" "}
             Mercy Abutsa is a global development specialist passionate about
             building climate-resilient communities and driving gender-responsive
             solutions at the intersection of policy, agriculture, and
-            environmental justice. With over five years of experience spanning
-            international development, climate diplomacy, and grassroots
-            engagement, Mercy brings a dynamic blend of field expertise,
-            strategic thinking, and advocacy to her work.
+            environmental justice.
           </p>
           <p>
-            Her professional journey includes impactful roles with
-            world-renowned organizations such as the Ban Ki-moon Centre for
-            Global Citizens, the United Nations Framework Convention on Climate
-            Change (UNFCCC), The Nature Conservancy (TNC), and the Women
-            Environmental Programme (WEP). Across these roles, she has led and
-            supported high-level programs focused on equitable climate action,
-            sustainable agriculture, and inclusive governance—shaping policies
-            and mobilizing resources to uplift vulnerable communities,
-            especially women and youth.
+            With over five years of experience spanning international
+            development, climate diplomacy, and grassroots engagement, she
+            brings a dynamic blend of field expertise, strategic thinking, and
+            advocacy.
           </p>
           <p>
-            Her professional journey includes impactful roles with
-            world-renowned organizations such as the Ban Ki-moon Centre for
-            Global Citizens, the United Nations Framework Convention on Climate
-            Change (UNFCCC), The Nature Conservancy (TNC), and the Women
+            Her journey includes impactful roles at organizations like the Ban
+            Ki-moon Centre, UNFCCC, The Nature Conservancy, and WEP—leading
+            equitable climate action, sustainable agriculture, and inclusive
+            governance.
+          </p>
+          <p>
+            With over five years of experience spanning international
+            development, climate diplomacy, and grassroots engagement, she
+            brings a dynamic blend of field expertise, strategic thinking, and
+            advocacy.
+          </p>
+          <p>
+            Her journey includes impactful roles at organizations like the Ban
+            Ki-moon Centre, UNFCCC, The Nature Conservancy, and WEP—leading
+            equitable climate action, sustainable agriculture, and inclusive
+            governance.
           </p>
         </motion.div>
+
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-          className="h-[100%] w-[45%] border border-solid border-red-500"
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="w-full lg:w-1/2"
         >
           <img
             src={Img1}
             alt="Mercy's Picture"
-            className="h-[100%] w-[100%] object-cover"
+            className="w-full h-full object-cover"
           />
         </motion.div>
       </div>
+
+      {/* Second Section */}
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.3 }}
-        className="h-[655px] w-[100%] flex gap-x-12 mb-5 px-36"
+        viewport={{ once: true, amount: 0.3 }}
+        className="flex flex-col-reverse lg:flex-row gap-10"
       >
-        <div className="h-[100%] w-[45%]">
+        <div className="w-full lg:w-1/2">
           <img
             src={Img1}
             alt="Mercy's Picture"
-            className="h-[100%] w-[100%] object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="h-[100%] w-[55%] py-6 text-base/7 flex flex-col gap-y-4 justify-center">
+        <div className="w-full lg:w-1/2 text-sm sm:text-base flex flex-col gap-4 justify-center text-justify ">
           <p>
-            {" "}
             Mercy Abutsa is a global development specialist passionate about
             building climate-resilient communities and driving gender-responsive
             solutions at the intersection of policy, agriculture, and
-            environmental justice. With over five years of experience spanning
-            international development, climate diplomacy, and grassroots
-            engagement, Mercy brings a dynamic blend of field expertise,
-            strategic thinking, and advocacy to her work.
+            environmental justice.
           </p>
           <p>
-            Her professional journey includes impactful roles with
-            world-renowned organizations such as the Ban Ki-moon Centre for
-            Global Citizens, the United Nations Framework Convention on Climate
-            Change (UNFCCC), The Nature Conservancy (TNC), and the Women
-            Environmental Programme (WEP). Across these roles, she has led and
-            supported high-level programs focused on equitable climate action,
-            sustainable agriculture, and inclusive governance—shaping policies
-            and mobilizing resources to uplift vulnerable communities,
-            especially women and youth.
+            She has served with globally recognized organizations such as the
+            Ban Ki-moon Centre, UNFCCC, The Nature Conservancy, and
+            WEP—mobilizing resources and shaping equitable policies for
+            vulnerable communities.
           </p>
           <p>
-            Her professional journey includes impactful roles with
-            world-renowned organizations such as the Ban Ki-moon Centre for
-            Global Citizens, the United Nations Framework Convention on Climate
-            Change (UNFCCC), The Nature Conservancy (TNC), and the Women
+            Her leadership consistently centers women and youth in climate and
+            development action.
+          </p>
+          <p>
+            With over five years of experience spanning international
+            development, climate diplomacy, and grassroots engagement, she
+            brings a dynamic blend of field expertise, strategic thinking, and
+            advocacy.
+          </p>
+          <p>
+            Her journey includes impactful roles at organizations like the Ban
+            Ki-moon Centre, UNFCCC, The Nature Conservancy, and WEP—leading
+            equitable climate action, sustainable agriculture, and inclusive
+            governance.
           </p>
         </div>
       </motion.div>

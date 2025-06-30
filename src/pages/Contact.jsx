@@ -59,18 +59,18 @@ const Contact = () => {
     transition: "all 0.7s",
   };
   return (
-    <div className="flex flex-col justify-between w-[70%] m-auto px-0 xl:px-32 py-12 min-h-[calc(90vh-45px)] mt-20">
-      <div className="flex items-center justify-center mb-7">
-        <div className="h-[2px] w-[30%] lg:w-[30%] flex">
-          <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
-          <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
+    <div className="flex flex-col justify-between w-[80%] md:w-[70%] m-auto px-0 xl:px-32 py-12 min-h-[calc(90vh-45px)] mt-20">
+      <div className="flex flex-col md:flex-row items-center justify-center mb-7 text-center gap-4">
+        <div className="flex h-[2px] w-full md:w-[30%]">
+          <div className="w-1/2 h-full bg-[#07363C]"></div>
+          <div className="w-1/2 h-full bg-[#F48D3F]"></div>
         </div>
-        <p className="w-[40%] lg:w-[40%] mx-4 font-semibold tracking-[0.35rem] text-[25px] text-center">
+        <p className="text-xl sm:text-2xl tracking-[0.35rem] font-semibold">
           GET IN TOUCH
         </p>
-        <div className="h-[2px] w-[30%] lg:w-[30%] flex">
-          <div className="w-[50%] h-[100%] bg-[#F48D3F]"></div>
-          <div className="w-[50%] h-[100%] bg-[#07363C]"></div>
+        <div className="flex h-[2px] w-full md:w-[30%]">
+          <div className="w-1/2 h-full bg-[#F48D3F]"></div>
+          <div className="w-1/2 h-full bg-[#07363C]"></div>
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-x-6 gap-y-6 justify-between md:h-[6rem] mt-8 md:mt-0 mb-5">
