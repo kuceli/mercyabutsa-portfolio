@@ -50,7 +50,7 @@ const Home = () => {
     arrows: false,
   };
   return (
-    <div className="flex flex-col lg:flex-row items-center w-full lg:min-h-[calc(100vh-48px)] min-h-screen pt-28 lg:pt-24 pb-10 xl:pb-6 px-8 md:px-12 lg:px-20 sm:gap-y-12 lg:gap-x-12 overflow-hidden">
+    <div className=" border border-solid border-red-500 flex flex-col lg:flex-row items-center w-full lg:min-h-[calc(100vh-120px)] min-h-fit pt-24 pb-8 px-8 md:px-12 lg:px-20 sm:gap-y-12 lg:gap-x-12 overflow-hidden">
       {/* Left */}
       <motion.div
         initial={{ x: -100, opacity: 0 }}
