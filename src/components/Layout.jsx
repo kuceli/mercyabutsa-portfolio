@@ -15,7 +15,7 @@ function Layout() {
 
   return (
     <>
-      <div className="flex flex-col flex-grow">
+      <div className="flex flex-col flex-grow lg:overfhidden">
         {isValidPath && <Header />}
         <div className="flex-grow">
           <Routes>

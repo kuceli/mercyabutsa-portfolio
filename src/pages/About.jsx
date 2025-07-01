@@ -21,7 +21,7 @@ const About = () => {
       </div>
 
       {/* First Section */}
-      <div className="flex flex-col lg:flex-row gap-10 mb-12">
+      <div className="flex flex-col lg:flex-row gap-10 mb-12 ">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -69,7 +69,7 @@ const About = () => {
           <img
             src={Img1}
             alt="Mercy's Picture"
-            className="w-full h-full object-cover"
+            className="w-full h-[600px] object-cover"
           />
         </motion.div>
       </div>
@@ -86,7 +86,7 @@ const About = () => {
           <img
             src={Img1}
             alt="Mercy's Picture"
-            className="w-full h-full object-cover"
+            className="w-full h-[600px] object-cover"
           />
         </div>
         <div className="w-full lg:w-1/2 text-sm sm:text-base flex flex-col gap-4 justify-center text-justify ">
