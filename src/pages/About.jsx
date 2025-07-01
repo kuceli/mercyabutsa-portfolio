@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="min-h-[calc(100vh-72px-48px)] mt-32 w-full px-8 md:px-12 lg:px-20 xl:px-36 text-[#07363C] mb-10">
+    <div className="min-h-[calc(100vh-72px-48px)] mt-32 mb-10 w-full px-8 md:px-12 lg:px-20 xl:px-36 text-[#07363C]">
       {/* Heading */}
       <div className="flex flex-col md:flex-row items-center justify-center mb-10 text-center gap-4">
         <div className="flex h-[2px] w-full md:w-[30%]">

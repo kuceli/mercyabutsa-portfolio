@@ -49,8 +49,9 @@ const Home = () => {
     autoplaySpeed: 3000,
     arrows: false,
   };
+
   return (
-    <div className="min-h-[calc(100vh-72px-48px)] border border-solid border-red-500 flex flex-col lg:flex-row items-center w-full mb-6 pt-28 px-8 md:px-12 lg:px-20 sm:gap-y-12 lg:gap-x-12 overflow-hidden">
+    <div className="flex-grow pt-24 pb-6 flex flex-col lg:flex-row items-center w-full px-8 md:px-12 lg:px-20 sm:gap-y-12 lg:gap-x-12 overflow-hidden">
       {/* Left */}
       <motion.div
         initial={{ x: -100, opacity: 0 }}

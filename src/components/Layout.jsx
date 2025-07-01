@@ -17,7 +17,7 @@ function Layout() {
     <>
       <div className="min-h-screen flex flex-col">
         {isValidPath && <Header />}
-        <div className="flex-grow">
+        <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -25,7 +25,7 @@ function Layout() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
-        </div>
+        </main>
         {isValidPath && <Footer />}
       </div>
     </>

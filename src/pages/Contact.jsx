@@ -59,7 +59,7 @@ const Contact = () => {
     transition: "all 0.7s",
   };
   return (
-    <div className="min-h-[calc(100vh-72px-48px)] flex flex-col justify-between w-[80%] md:w-[70%] m-auto px-0 xl:px-32 py-12 min-h-[calc(90vh-45px)] mt-20">
+    <div className="flex flex-col min-h-[calc(100vh-72px-48px)]  w-[80%] md:w-[70%] mx-auto px-0 xl:px-32 pt-28 pb-6">
       <div className="flex flex-col md:flex-row items-center justify-center mb-7 text-center gap-4">
         <div className="flex h-[2px] w-full md:w-[30%]">
           <div className="w-1/2 h-full bg-[#07363C]"></div>
