@@ -15,7 +15,7 @@ function Layout() {
 
   return (
     <>
-      <div className="flex flex-col flex-grow lg:overfhidden">
+      <div className="min-h-screen flex flex-col">
         {isValidPath && <Header />}
         <div className="flex-grow">
           <Routes>

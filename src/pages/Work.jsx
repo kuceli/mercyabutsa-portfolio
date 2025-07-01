@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Work = () => {
   return (
-    <div className="mt-32 w-full text-[#07363C] px-6 sm:px-10 md:px-20 lg:px-28 xl:px-36">
+    <div className="min-h-[calc(100vh-72px-48px)] mt-32 w-full text-[#07363C] px-6 sm:px-10 md:px-20 lg:px-28 xl:px-36">
       {/* Heading */}
       <div className="flex flex-col md:flex-row items-center justify-center mb-10 text-center gap-4">
         <div className="flex h-[2px] w-full md:w-[30%]">
